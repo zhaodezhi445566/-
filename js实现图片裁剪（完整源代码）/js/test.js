@@ -1,7 +1,7 @@
 
 window.onload =function(){
-	document.onselectstart=new Function('event.returnValue=false;');
-	$( "#main" ).draggable({ containment: 'parent' ,drag: setChoice});
+	document.onselectstart=new Function('event.returnValue=false;');//去除蓝色闪烁
+	$( "#main" ).draggable({ containment: 'parent' ,drag: setChoice});//drag: setChoice当鼠标拖拽移动时，触发此事件。
 	var rightDiv = document.getElementById("right");
 	var mainDiv = document.getElementById("main");
 	var upDiv = document.getElementById("up");
